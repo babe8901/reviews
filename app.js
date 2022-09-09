@@ -71,3 +71,12 @@ prevBtn.addEventListener("click", function () {
   }
   showPerson(currentItem);
 });
+
+randomBtn.addEventListener("click", function () {
+  currentItem = getRandomNumber();
+  showPerson(currentItem);
+});
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * reviews.length);
+}
